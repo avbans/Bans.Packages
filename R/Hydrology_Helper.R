@@ -2,10 +2,6 @@
 #ASSUMPTION THAT THE NEW YEAR STARTS ON OCT 1ST.
 #USE IN CONJUNTION WITH DPLYR::MUTATE
 
-Imports:
-        lubridate,
-        stringr
-
 get_wateryear<-function(date,yearstart){
   yearstart = 10
   x<-as.character(ifelse(lubridate::month(date) < yearstart,lubridate::year(date), lubridate::year(date)+1))
@@ -22,11 +18,6 @@ get_wateryear<-function(date,yearstart){
 #THIS FUNCTION WORKS FOR BOTH METRIC AND IMPERIAL AS LONG AS UNITS ARE "depth_in"
 #OR "depth_mm"
 #THIS FUNCTION USES MY GET_WATERYEAR() FUNCTION AS WELL
-
-Imports:
-  dplyr,
-  tidyr,
-  lubridate
 
 parse_storms<-function(df,
                        intervals_per_hr,
@@ -92,10 +83,6 @@ parse_storms<-function(df,
 #STORM EVENT
 #THIS FUNCTION BUILDS ON TOP THE PARSE_STORMS() FUNCTION AND TAKES A TIDY DF that
 #NEEDS datetime, AND DF CREATED BY PARSE_STORMS() FUNCTION
-
-Imports:
-  lubridate,
-  tidyr
 
 parse_dates<- function(df,df2){
   df2<-df2%>%
