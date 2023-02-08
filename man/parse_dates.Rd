@@ -16,6 +16,8 @@ Returns updated dataframe where each observation has an associated
 }
 \description{
 This function determines what storm event an observation is associated with.
+This can be used a wide range of circumstances (sampling, rain, flow, etc.).
+WARNING: This function does not work on extremely large datasets for now.
 }
 \examples{
 df<- parse(df, df2)

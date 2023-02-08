@@ -1,6 +1,6 @@
 #' Determine Water Year
 #'
-#'This function determines the water year based on a date given
+#'This function determines the water year based on a date given.
 #' @param date The date in the form of date or datetime.
 #' @param yearstart The month your water year starts on, defaults as Oct 1st (10).
 #'
@@ -94,7 +94,8 @@ parse_storms<-function(df,
 #' Identify what storms an observation belongs to
 #'
 #' This function determines what storm event an observation is associated with.
-#` This can be used a wide range of circumstances (sampling, rain, flow, etc.)`
+#' This can be used a wide range of circumstances (sampling, rain, flow, etc.).
+#' WARNING: This function does not work on extremely large datasets for now.
 #' @param df The dataframe to manipulate. You need datetime at minimum.
 #' @param df2 The dataframe output from parse_storms() function.
 #'

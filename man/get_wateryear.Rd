@@ -15,7 +15,7 @@ get_wateryear(date, yearstart)
 The water year the date belongs to.
 }
 \description{
-This function determines the water year based on a date given
+This function determines the water year based on a date given.
 }
 \examples{
 get_wateryear(lubridate::today(),9)
