@@ -1,22 +1,18 @@
 Package: Bans.Packages
-Title: What the Package Does (One Line, Title Case)
+Title: Collection of helpful personal functions
 Version: 0.0.0.9000
 Authors@R: 
     person("Alex", "Bans", , "avbans93@gmail.com", role = c("aut", "cre"))
 Description: This package is a collection of personal functions for working with 
     hydrological data and compiling markdown reports directly from scripts. 
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
-Imports: lubridate,
-        stringr,
-        dplyr,
-        tidyr,
-        here,
-        markdown
-
-       
-
-
+Imports: 
+    dplyr,
+    here,
+    lubridate,
+    markdown,
+    stringr,
+    tidyr
