@@ -12,7 +12,7 @@
 #' @examples report_compiler(input_location = "scripts",input_namne = "mymarkdownreport.R",output_location = "output",output_name = "Report.html")
 #' @export
 report_compiler<-function(input_location,input_name,output_location,output_name){
-  project_directory = here::here()
+  project_directory = here()
   file_input <-paste(project_dir,input_location,input_name, sep = "/")
   file_output = paste(project_dir,output_location, output_name, sep = "/")
 
