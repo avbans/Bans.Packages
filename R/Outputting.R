@@ -13,8 +13,8 @@
 #' @export
 report_compiler<-function(input_location,input_name,output_location,output_name){
   project_directory = here()
-  file_input <-paste(project_dir,input_location,input_name, sep = "/")
-  file_output = paste(project_dir,output_location, output_name, sep = "/")
+  file_input <-paste(project_directory,input_location,input_name, sep = "/")
+  file_output = paste(project_directory,output_location, output_name, sep = "/")
 
   rmarkdown::render(input = file_input,
                     output_file = file_output)
