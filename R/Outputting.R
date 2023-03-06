@@ -1,7 +1,7 @@
 #' Render markdown report
 #'
 #'This function renders and saves a markdown directly from a R script
-#' to any desired location. `
+#' to any desired location. Please note that library(here) needs to be called before using function`
 #' @param input_location Location of R script, in quotes.
 #' @param input_name Script name , in quotes.
 #' @param output_location Location where markdown will be saved, in quotes.
